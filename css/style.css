@@ -76,6 +76,14 @@ body {
   margin-bottom: 5px;
 }
 
+.mail,
+.phone {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 0.3rem;
+}
+
 /* Content Section */
 .content {
   /* display: grid;
@@ -196,6 +204,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 .experience {
   display: flex;
@@ -228,6 +238,93 @@ body {
   width: 85%;
 }
 
+/* Projects */
+.project-tab {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  margin-top: 35px;
+}
+.project-tab h2 {
+  color: #4f4f4f;
+  font-size: 18px;
+  font-weight: 500;
+}
+.tag {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 8px 22px;
+  border: 1px solid var(--text-primary);
+  margin-right: 16px;
+
+  margin-top: 1rem;
+}
+.tags .active {
+  border: 1px solid #2f80ed;
+  background: #2f80ed;
+  color: #fff;
+}
+
+.projects {
+  margin-top: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30.5px;
+}
+.project {
+  max-width: 328px;
+  padding: 18px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.project img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.project .hashtags {
+  margin: 24px 0;
+
+  display: flex;
+  gap: 9px;
+}
+
+.project h1 {
+  margin: 22px 0;
+
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.project p {
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btns {
+  margin-top: 40px;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+.btn {
+  padding: 13px 40px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.demo {
+  background: #2f80ed;
+  border: 1px solid #2f80ed;
+  color: #fff;
+}
+
+.code {
+  border: 1px solid #2f80ed;
+  color: #2f80ed;
+}
 @media screen and (max-width: 800px) {
   body {
     max-width: 80%;
@@ -267,6 +364,10 @@ body {
   .skills,
   .hobbies {
     max-width: 300px;
+  }
+
+  .projects {
+    flex-direction: column;
   }
 }
 
